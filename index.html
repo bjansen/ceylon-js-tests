@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Ceylon JS tests</title>
+        <link rel="stylesheet" type="text/css" href="resources/style.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <table id="results">
+                <tr>
+                    <th>Check</th>
+                    <th>Result</th>
+                </tr>
+            </table>
+        </div>
+        <script src="//requirejs.org/docs/release/2.3.2/minified/require.js"></script>
+        <script type="text/javascript">
+        require.config({
+            baseUrl : 'modules'
+        });
+        require(
+                [ 'com/github/bjansen/ceylonjstests/1.0.0/com.github.bjansen.ceylonjstests-1.0.0' ],
+                function(app) {
+                    app.run();
+                }
+        );
+        </script>
+    </body>
+</html>
