@@ -4,3 +4,7 @@ offline=false
 flatclasspath=false
 autoexportmavendependencies=false
 fullyexportmavendependencies=false
+
+[repositories]
+lookup=../ceylon-sdk/modules
+lookup=./modules
