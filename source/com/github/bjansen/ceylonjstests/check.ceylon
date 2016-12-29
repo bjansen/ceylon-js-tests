@@ -13,7 +13,7 @@ void check(String description, "Returning false means an assertion failed" Anyth
         }
         else {
         }
-    } catch (Exception e) {
+    } catch (Throwable e) {
         result = "✘ KO: ``e.message``";
         cls = "error";
     }
